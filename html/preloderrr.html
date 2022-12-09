@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KYU OFFICIAL WEB PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="glicth-wrapper.css">
+    <link rel="stylesheet" href="search.css">
+  
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <div> 
+    <!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+   <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+   <li><a href="#"><i class="fas fa-tv"></i>dashboard</a></li><br><br>
+   <li><a href="#"><i class="far fa-comments"></i>messages</a></li><br><br>
+   <li><a href="#"><i class="far fa-folder"></i>profile</a></li><br><br>
+   <li><a href="#"><i class="far fa-address-book"></i>file manager</a></li><br><br>
+   <li><a href="#"><i class="fas fa-cogs"></i>potfolio</a></li><br><br>
+ </div>
+ 
+ <!-- Page Content -->
+ <div class="w3-teal">
+   <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  
+   </div>
+ </div>
+ 
+  
+ 
+ <script>
+ function w3_open() {
+   document.getElementById("mySidebar").style.display = "block";
+ }
+ 
+ function w3_close() {
+   document.getElementById("mySidebar").style.display = "none";
+ }
+ </script>
+       <div class="search">
+           <input type="text" placeholder="search..." required><br>
+       <div class="glitch-wrapper">
+           <div class="glitch" data-glitch="welcome to our website">welcome to our website</div>
+       </div> 
+       </div>
+       <div class="menu-bar">
+       <ul>
+           <li class=""><a href="#"><i class="fa fa-home"></i>homes</a></li>
+           <li><a href="#"><i class="fa fa-user"></i>About us</a>
+               <div class="sub-menu-1">
+                   <ul>
+                       <li><a href="on going project.html">mission</a></li>
+                       <li><a href="#">vision</a></li>
+                       <li><a href="#">team</a></li>
+                   </ul>
+               </div>
+           </li>
+           <li><a href="#"><i class="fa fa-clone"></i>Services</a>
+               <div class="sub-menu-1">
+                   <ul>
+                       <li><a href="log in form.html">STUDENT PORTAL</a></li>
+                       <li class="hover-me"><a href="#">marketing</a><i class="fa fa-angle-right"></i>
+                           <div class="sub-menu-2">
+                               <ul>
+                                   <li><a href="#">SEO</a></li>
+                                   <li><a href="#">EMAIL MARKETING</a></li>
+                                   <li><a href="#">SOCIAL MEDIA</a></li>
+                               </ul>
+                           </div>
+                       </li>
+                       <li class="hover-me"><a href="#">CLUBS</a><i class="fa fa-angle-right"></i>
+                           <div class="sub-menu-2">
+                           <ul>
+                               <li><a href="#">RUGBY</a></li>
+                               <li><a href="#">SOCCER</a></li>
+                               <li><a href="#">RED CROSS</a></li>
+                               <li><a href="#">CU</a></li>
+                               <li><a href="#">WILDLIFE</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </div>
+           </li>
+           <li><a href="#"><i class="fa fa-users"></i></a></li>
+           <li><a href="#"><i class="fa fa-angellist"></i>ACADEMIC CALENDER</a></li>
+           <li><a href="#"><i class="fa fa-address-book" aria-hidden="true"></i>ACDEMICS</a></li>
+               <div class="sub-menu-3">
+                   <ul>
+                       <li><a href="tables.html">fee structure</a></li>
+                       <li><a href="#">fee statement</a></li>   
+                   </ul>
+               </div>
+           <li><a href="#"><i class="fa fa-edit"></i>Training</a></li>
+           <li><a href="#"><i class="fa fa-phone"></i>contacts</a></li>
+       </ul>
+       </div>
+   </body>
+   <br>
+   <div class="box">
+   <img src="images/kyu.jpg"width="100" height="100"><br>
+   </div>
+   <h1>KIRINYAGA UNIVERSITY</h1>
+   <h2>UNIVERSITY FOR OUR PEOPLE</h2>
+
+   <fieldset> <marquee>WELCOME TO KIRINYAGA UNIVERSITY😂 </marquee></fieldset>
+   <button>
+       <a href="https://www.kyu.ac.ke">click here</a>
+   </button>
+    <div class="gif">
+    <img src="images/new9.gif"width="100" height="137">
+    </div>
+   <fieldset style="background-color: black;">
+       <pre style="padding: 100px 200px;"schoolof pure and applied scieces> <br>SCHOOL OF PURE AND APLIED SCIENCES<br>
+          <br>SCHOOL OF EDUCATION<br>
+          <p><mark>september intake ongoing</mark></p>
+          </address>
+   </fieldset>
+   <p3>all are welcome</p3><br>
+  <fieldset style="background-color:azure;">
+   <pre style="padding: 25px 50px; margin: 10px; padding: 0px; border-radius: 2px; border: 2px; width: fit-content; height: fit-content;">
+   <p4>KIRINYAGA UNIVERSITY IS WELL known as KYU
+       the best university for you,,,,,
+       WE train our students and develope human resoure
+       equipped with innovative skils to inspire enterprice
+       in the diciplines of enginnering,sciences and arts
+   </p4>
+</fieldset></div>
+  
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<div>
+  <footer class="footer">&copy; Copyright Mr. mathu de camel</footer>
+</div>
+<body>
+</html>

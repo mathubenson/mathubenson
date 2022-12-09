@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>sidebar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <li><a href="#"><i class="fas fa-tv"></i>dashboard</a></li><br><br>
+  <li><a href="#"><i class="far fa-comments"></i>messages</a></li><br><br>
+  <li><a href="#"><i class="far fa-folder"></i>profile</a></li><br><br>
+  <li><a href="#"><i class="far fa-address-book"></i>file manager</a></li><br><br>
+  <li><a href="#"><i class="fas fa-cogs"></i>potfolio</a></li><br><br>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+ 
+  </div>
+</div>
+
+ 
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
+</body>
+</html> 

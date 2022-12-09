@@ -1,0 +1,192 @@
+.loader_bg
+{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader
+{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after
+{
+    content: '';
+    border: 1em solid #ff5733;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+
+
+}
+.loader:before
+{
+    animation-delay: .5s;
+}
+  @keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+  }
+
+body
+{
+   
+    background-size: cover;
+    background-position: center;
+    padding: -120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.menu-bar
+{
+    background: rgb(0,100,0);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color:#fff;
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color:#fff;
+}
+
+ .menu-bar ul li:hover
+{
+    background: #2bab0d;
+    border-radius: 3px;
+
+}
+.menu-bar .fa
+{
+    margin-right: 6px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin: top 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: #b2ff00;
+}
+.fa-angle-right
+{
+   float: right;
+}
+.sub-menu-2
+{
+    display:none;
+}
+.hover-me:hover .sub-menu-2
+{
+position: absolute;
+display: block;
+margin-top: -40px;
+margin-left: 140px;
+background-color: rgba(0,100,0);
+}
+.sub-menu-3
+{
+    display: none;
+
+}
+.menu-bar ul li:hover .sub-menu-3
+{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin: top 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-3 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-3 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-3 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-3 ul li a:hover
+{
+    color: #b2ff00;
+}
+.fieldset.center
+{
+    padding: 20px;
+    font-size: 2px;
+    color: #fff;
+    margin: 10%;
+    text-align: left;
+}
+.footer{
+    text-align: center;
+    padding:  55px 20px;
+    background-color: darkslateblue;
+    color: #fff;
+}

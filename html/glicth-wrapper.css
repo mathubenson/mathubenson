@@ -1,0 +1,86 @@
+body
+{
+    background-image: url();
+    background-size: 25%;
+
+}
+.glitch-wrapper
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQup19c2NLpzCCMNr638OVyJExnB5F9AWCTA&usqp=CAU);
+    border-radius: 50%;
+
+}
+.glitch
+{
+    position: relative;
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #e35b5b;
+    letter-spacing: 4px;
+    z-index: 1;
+
+}
+.glitch:before,
+.glitch:after
+{
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+
+}
+.glitch:before
+{
+    animation: glitch-color 0.3s cubic-bezier (0.25,0.46,0.45,0.94) both infinite;
+    color: #0ae6e6;
+    z-index: -1;
+}
+.glitch:after
+{
+    animation: glitch-color 0.3s
+    cubic-bezier(0.25,0.46,0.45,0.94)reverse both infinite;
+    color: #9d9d9d;
+    z-index: -2;
+}
+
+
+
+
+
+@keyframes glitch-color
+{
+    0%
+    {transform:translate(0)
+    }
+    20%{
+        transform: translate(-3px,-3px);
+    }
+    40%
+    {
+        transform: translate(-3px,-3px);
+
+    }
+    60%
+    {
+        transform: translate(3px,3px);
+
+    }
+    80%
+    {
+        transform: translate(3px,-3px);
+
+    }
+    to{
+        transform:translate(0);
+    }
+
+}
